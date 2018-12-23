@@ -1,60 +1,72 @@
+ 
 html{
     height: 100%;
-}
+} 
 body {
     min-height: 100%;
+    margin: 0 0 0 0;
     display: grid;
     grid-template-rows: 1fr auto;
-    margin: 0 0 0 0;
     background-image: url(../images/gravel.png);
     background-repeat: repeat;
 }
-header{
+.container-fluid{
+    padding: 0;
+}
+.header{
     background-color: #ffffff;
-    width: 100%;
-    display: inline-block;
     border-bottom: 2px solid #cccccc;
+}
+.row{
+    margin: 0;
 }
 main{
     background-color: #ffffff;
-    max-width: 960px;
-    margin: 20px auto;
+    margin: 20px 0 20px 0;
     border: 3px solid #dddddd;
     overflow: auto;
-    box-sizing: border-box;
     padding: 10px 30px 30px 30px;
+    box-sizing: border-box;
+}
+.main{
+    margin-top: 20px;
 }
 footer{
     background-color: #666666;
-    text-align: center;
-    width: 100%;
     height: 50px;
     border-top: 8px solid #4aaaa5;
     grid-row-start: 2;
     grid-row-end: 3;
+} 
+.footer{
+    text-align: center;
 }
-footer p{
-    padding-top: 30px;
-    color: #dddddd;
+.block{
+    display: block;
+}
+ footer p{
+    padding-top: 20px;
+    color: #dddddd !important;
     line-height: normal;
     margin: 0;
     line-height: 1;
 }
-#content{
-    max-width: 960px;
-    margin: auto;
-}
+
 h1,h2{
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 h1{
     color: #ffffff;
-    background-color: #4aaaa5;
-    padding: 30px 20px;
+    background-color: #4aaaa5 !important;
+    line-height: 2.0;
     margin: 0 0 0 0;
     float: left;
-    font-size: 2em;
+    font-size: 2.8em;
     font-weight: bold;
+    padding: 5px 15px;
+}
+.heading{
+    padding-left: 0;
 }
 h2{
     color: #4aaaa5;
@@ -67,15 +79,13 @@ hr{
     border-top: 2px solid #cccccc;
     margin-bottom: 40px;
 }
+
 nav{
     height: 100%;
-    float: right;
-    margin: 0 0 0 0;
-    padding:  35px 0px 0px 0px;
 }
 nav a{
+    padding: 10px 10px !important;
     font-size: 20px;
-    padding: 3px 10px;
     text-decoration: none;
     line-height: normal;
     border-radius: 3px;
@@ -96,6 +106,7 @@ p,a, form, input, textarea{
     margin-top: 0;
     line-height: 2;
 }
+
 p{
     display: block;
     margin-top: 0em;
@@ -105,14 +116,15 @@ p{
     font-size: 18px;
 }
 .profile{
-    float: left;
     margin-right: 20px;
-    border: 2px solid #666666;
-    margin-top: .6em
+    margin-top: .6em;
+    margin-left: 0;
 }
+
 img{
     border-radius: 3px;
 }
+
 .grid-container{
     display: inline-grid;
     grid-template-columns: auto auto auto;
@@ -122,6 +134,7 @@ img{
 }
 .grid-item{
     position: relative;
+    margin: 0 10px;
 }
 .grid-item img{
     width: 100%;
@@ -134,9 +147,10 @@ figcaption{
     left: 0;
     bottom: 20px;
     padding: 10px 0;
+    margin-left: 0px !important;
     text-align: center;
     background-color: #4aaaa5;
-    border: 1px solid #666666;
+    text-align: center;
     box-sizing: border-box;
 }
 figcaption a{
@@ -178,4 +192,16 @@ textarea{
 }
 .submit-button:hover{
     background-color: #5E7F7E;
+} 
+.no-padding{
+    padding: 0 !important;
+}
+.portfolio-item{
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 768px){
+    .container{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
