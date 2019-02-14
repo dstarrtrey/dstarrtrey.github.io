@@ -6,138 +6,167 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio</title>
+        <title>David L. Starr</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="icon" href="assets/images/me.jpg">
+        <link rel=icon href="images/boys.jpg">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">        
+        <link href="css/bootstrapEdits.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>        
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-            <div>
-            <div class="container-fluid">
-                <div class="row header">
-                    <div class="container">
-                        <header class="row">
-                            <h1 class="col-md-6 col-lg-5 col-xl-4 col-sm-12 heading text-center no-gutters">David L. Starr</h1>
-                            <div class="col-lg-2 col-xl-4 col-md-1"></div>
-                            <div class="text-right col-md-5 col-lg-5 col-xl-4 col-sm-12 no-padding">
-                                <nav class="navbar navbar-right">
-                                    <a class="nav-link nav-item active" href="index.html">About Me</a><a class="nav-link nav-item" href="portfolio.html">Portfolio</a>
-                                </nav>
-                            </div> 
-                        </header>
+        <div class="container-fluid">
+            <div class="row row-centered">
+                <div class="col-xs-12 col-centered">
+                    <div class="row city">
+                            <div class="col-sm-12 center">
+                                <div class="">
+                                    <a href="index.html"><h1>David L. Starr</h1></a>
+                                    <div class="row">
+                                        <img class="col-sm-10 offset-sm-1 underline img-fluid" src="images/underline.png">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row bar">
+                        <div class="container">
+                            <div class="col-md-8 col-sm-12 col-centered">
+                                <div class="navbar navbar-expand-lg">
+                                    <a href="bio.html" data-href="bio" class="col-xs-3 nav-item nav-link">Bio</a>
+                                    <a href="portfolio.html" data-href="portfolio" class="col-xs-3 nav-item nav-link active">Portfolio</a>
+                                    <a href="resume.html" data-href="resume" class="col-xs-3 nav-item nav-link">Resume</a>
+                                    <a href="contact.html" data-href="contact" class="col-xs-3 nav-item nav-link">Contact</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container main">
-                    <main class="row">
-                        <div class="container">
-                            <div class="row">
-                                <div class="no-padding col-md-12">
-                                    <h2>Portfolio</h2>
-                                    <hr>
+            <div class="row content-row">
+                <div class="container-fluid content active" id="content">
+                    <div class="row">
+                        <div class="project row">
+                            <div class="col-sm-6 col-md-5 col-xl-4  middle">
+                                <a href="/Chess-Board-2Player"><img src="images/chess.gif" alt="2-Player Online Chess" class="project-img img-fluid"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-7 col-xl-8 middle">
+                                <div class="project-caption">
+                                    <h2>2-Player Online Chess Game</h2>
+                                    <h3>Full-Stack Developer</h3>
+                                    <p><b>Firebase, jQuery, CSS Grid, SweetAlert.js</b></p>
+                                    <p>Uses Google Firebase to store each turn, whose turn it is, and a few other things to enable a fully-functional online chess game. Allows each player (not spectators) to undo the last turn (with opponent's consent), or start a new game if they desire. Uses SweetAlert to notify users if it is their turn, they are in check, or if their opponent wants to undo.</p>
+                                    <small><a href="http://www.github.com/dstarrtrey/Chess-Board-2Player">GitHub</a> | <a href="http://dstarrtrey.github.com/Chess-Board-2Player">Live Demo</a></small>
                                 </div>
                             </div>
-                            <div class="row">
-                                <section class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-lg-3 portfolio-item offset-lg-0 col-sm-5 no-padding">
-                                            <a href="/Chess-Board-2Player"><img src="assets/images/portfolio/chess.png" alt="2-Player Online Chess Game" class="img-fluid"></a>
-                                            <figcaption><a href="/Chess-Board-2Player">2-Player Online Chess Game</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="/Markdown-Previewer"><img src="assets/images/portfolio/markdown.png" alt="React Markdown Previewer" class="img-fluid"></a>
-                                            <figcaption><a href="/Markdown-Previewer">React Markdown Previewer</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 no-padding">
-                                            <a href="/kcrmccoy"><img src="assets/images/portfolio/kcrmccoy.png" alt="KCRMCCOY Portfolio Site" class="img-fluid"></a>
-                                            <figcaption><a href="/kcrmccoy">Kcrmccoy LEGO Portfolio</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-0 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="/GIPHY-API-Webpage"><img src="assets/images/portfolio/giphy.png" alt="GIPHY & OMDb API Webpage" class="img-fluid"></a>
-                                            <figcaption><a href="/GIPHY-API-Webpage">GIPHY & OMDb API Webpage</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 no-padding">
-                                            <a href="http://davidstarr.me/Calculator.html"><img class="img-fluid" src="assets/images/portfolio/Calculator.png" alt="JavaScript Calculator"></a>
-                                            <figcaption><a href="http://davidstarr.me/Calculator.html">JavaScript Calculator</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="/Word-Guess-Game/"><img class="img-fluid" src="assets/images/portfolio/hangman.png" alt="Wild West Word Guess Game"></a>
-                                            <figcaption><a href="Word-Guess-Game/">Word Guess Game</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-0 col-sm-5 no-padding">
-                                            <a href="https://www.freecodecamp.org/certification/dstarrtrey/responsive-web-design"><img class="img-fluid" src="assets/images/portfolio/cert1.png" alt="FreeCodeCamp.org Responsive Web Design certificate"></a>
-                                            <figcaption><a href="https://www.freecodecamp.org/certification/dstarrtrey/responsive-web-design">HTML/CSS Certificate</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="https://www.freecodecamp.org/certification/dstarrtrey/javascript-algorithms-and-data-structures"><img class="img-fluid" src="assets/images/portfolio/cert2.png" alt="FreeCodeCamp.org Javascript Certificate"></a>
-                                            <figcaption><a href="https://www.freecodecamp.org/certification/dstarrtrey/javascript-algorithms-and-data-structures">JS Certificate</a></figcaption>    
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 no-padding">
-                                            <a href="Star-Wars-RPG/"><img class="img-fluid" src="assets/images/portfolio/starwars.png" alt="Star Wars RPG"></a>
-                                            <figcaption><a href="Star-Wars-RPG/">Star Wars RPG</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-0 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="/Wikipedia-Viewer"><img class="img-fluid" src="assets/images/portfolio/wikiViewer.jpg" alt="JQuery Wikipedia Viewer"></a>
-                                            <figcaption><a href="/Wikipedia-Viewer">JQuery Wikipedia Viewer</a></figcaption>    
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 no-padding">
-                                            <a href="http://davidstarr.me/TwitchViewer.html"><img class="img-fluid" src="assets/images/portfolio/twitchViewer.jpg" alt="Twitch API Demonstration"></a>
-                                            <figcaption><a href="http://davidstarr.me/TwitchViewer.html">Twitch API Demonstration</a></figcaption>                                                
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="/RPS-Multiplayer"><img src="assets/images/portfolio/rps.png" alt="Rock Paper Scissors Multiplayer" class="img-fluid"></a>
-                                            <figcaption><a href="/RPS-Multiplayer/">Rock, Paper, Scissors Multiplayer</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-0 col-sm-5 no-padding">1
-                                            <a href="http://davidstarr.me/QuoteGenerator.html"><img class="img-fluid" src="assets/images/portfolio/randQuoteGen.jpg" alt="Random Quote Generator"></a>
-                                            <figcaption><a href="http://davidstarr.me/QuoteGenerator.html">Random Quote Generator</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="js-MIDISCORE/"><img class="img-fluid" src="assets/images/portfolio/SeniorProject.png" alt="js-MIDISCORE"></a>
-                                            <figcaption><a href="js-MIDISCORE">MIDI to Score Converter</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 no-padding">
-                                            <a href="https://github.com/dstarrtrey/MusicBox/"><img class="img-fluid" src="assets/images/portfolio/musicBox.gif" alt="SolidWorks Music Box Animation"></a>
-                                            <figcaption><a href="https://github.com/dstarrtrey/MusicBox/">SolidWorks Music Box</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-0 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="https://codepen.io/dstarrtrey/pen/vjqqrw"><img class="img-fluid" src="assets/images/portfolio/pomodoro.png" alt="JavaScript Pomodoro Clock"></a>
-                                            <figcaption><a href="https://codepen.io/dstarrtrey/pen/vjqqrw">JavaScript Pomodoro Clock</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 no-padding">
-                                            <a href="Trivia-Game/"><img class="img-fluid" src="assets/images/portfolio/trivia.png" alt="Javascript Trivia Game"></a>
-                                            <figcaption><a href="Trivia-Game/">Javascript Trivia Game</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-1 col-sm-5 offset-sm-2 no-padding">
-                                            <a href="http://www.davidstarr.me"><img class="img-fluid" src="assets/images/portfolio/portfolioSite.png" alt="Portfolio Website"></a>
-                                            <figcaption><a href="http://www.davidstarr.me">www.davidstarr.me</a></figcaption>
-                                        </div>
-                                        <div class="col-lg-3 portfolio-item offset-lg-0 col-sm-5 no-padding">
-                                            <a href="https://walkitoff.bandcamp.com/releases"><img class="img-fluid" src="assets/images/portfolio/walkItOff.jpg" alt="Walk it Off—Inside Joke"></a>
-                                            <figcaption><a href="https://walkitoff.bandcamp.com/releases">Walk it off—Inside Joke</a></figcaption>
-                                        </div>
-                                    </div>
-                                </section>
+                        </div>
+                        <div class="project row">
+                            <div class="col-sm-6 col-md-7 col-xl-8 middle">
+                                <div class="project-caption">
+                                    <h2>Live Markdown Previewer</h2>
+                                    <h3>Front-End (React) Developer</h3>
+                                    <p><b>React, Marked.js, create-react-app</b></p>
+                                    <p>Completed for <a href="http://www.freecodecamp.org/dstarrtrey">freeCodeCamp</a>'s Front-End Libraries Certification, this app enables a user to write and edit markdown text in a live environment. This gives a user the ability to preview the text before committing it to a live repo. It uses the Marked.js library to convert markdown into html elements. It is all done in a single, simple React component.</p>
+                                    <small><a href="http://www.github.com/dstarrtrey/Markdown-Previewer">GitHub</a> | <a href="http://dstarrtrey.github.io/Markdown-Previewer">Live Demo</a></small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-5 col-xl-4  middle">
+                                <a href="/Markdown-Previewer"><img src="images/markdown.gif" alt="React Markdown Previewer" class="project-img img-fluid"></a>
                             </div>
                         </div>
-                    </main>
-                </div>
-            </main>
+                        <div class="project row">
+                            <div class="col-sm-6 col-md-5 col-xl-4  middle">
+                                <a href="/Dinner-and-a-Show"><img src="images/dinner-and-a-show.gif" alt="Dinner and a Show" class="project-img img-fluid"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-7 col-xl-8  middle">
+                                <div class="project-caption">
+                                    <h2>Dinner and a Show</h2>
+                                    <h3>Back-End/JavaScript Developer</h3>
+                                    <p><b>Materialize, AJAX, jQuery, Firebase, Ticketmaster API, MapQuest API, async—await</b></p>
+                                    <p>Primary JavaScript Developer for a team of three. Collaborated using GitHub version control, slack, and in-person meetups for major decisions. This app Takes a user's location (or specified location, keyword, or date) and returns music events with food venues nearby, providing dinner—and a show—for the end user.</p>
+                                    <small><a href="http://www.github.com/dstarrtrey/Dinner-and-a-Show">GitHub</a> | <a href="http://dstarrtrey.github.io/Dinner-and-a-Show">Live Demo</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project row">
+                            <div class="col-sm-6 col-md-7 col-xl-8 middle">
+                                <div class="project-caption">
+                                    <h2>Kcrmccoy.com</h2>
+                                    <h3>Front-End Developer & Designer</h3>
+                                    <p><b>Responsive Design, Flickr API, HTML API</b></p>
+                                    <p>Commission project for LEGO animator/builder. Collaborated using Google Docs—as our schedules rarely lined up—to specify changes that should be done, were done, and should be undone. Done so that the user's browser does not refresh between pages using HTML AJAX requests.</p>
+                                    <small><a href="http://www.github.com/dstarrtrey/kcrmccoy">GitHub</a> | <a href="http://dstarrtrey.github.io/kcrmccoy">Live Demo</a></small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-5 col-xl-4  middle">
+                                <a href="/kcrmccoy"><img src="images/kcrmccoy.gif" alt="KCRMCCOY.com" class="project-img img-fluid"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-xs-12">
+                            <figure class="portfolio-item figure col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="/js-MIDISCORE"><img alt="Senior Project" src="images/SeniorProject.png" class="portfolio-image img-responsive"></a>
+                                <figcaption class="caption"> MIDI converter that uses <a href="http://github.com/Tonejs/MidiConvert">MidiConvert</a> and <a href="http://github.com/MrRio/jsPDF">jsPDF</a> libraries to convert into visible sheet music in the form of a PDF. The program can be seen <a href="/js-MIDISCORE">here</a> and on <a href="http://www.github.com/dstarrtrey/js-MIDISCORE">GitHub</a>.</figcaption>
+                            </figure>
+                            <figure class="portfolio-item figure col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="http://www.freecodecamp.org/dstarrtrey"><img src="images/profile.png" alt="FreeCodeCamp Profile" class="portfolio-image img-responsive"></a>
+                                <figcaption class="caption">I have nearly 600 projects, algorithms, and lessons completed on FreeCodeCamp.org. View my profile and progress <a href="http://www.freecodecamp.org/dstarrtrey">here</a>.</figcaption>
+                            </figure>
+                            <figure class="portfolio-item figure col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="http://www.freecodecamp.org/certification/dstarrtrey/javascript-algorithms-and-data-structures"><img src="images/cert.png" alt="FreeCodeCamp JavaScript Certificate" class="portfolio-image img-responsive"></a>
+                                <figcaption class="caption">FreeCodeCamp offers 6 certificates and thousands of lessons for their Full Stack program. These are a couple <a href="http://www.freecodecamp.org/dstarrtrey/">certificates</a> that I have been awarded thus far.</figcaption>
+                            </figure>
+                            <figure class="portfolio-item figure col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="http://www.github.com/dstarrtrey/MusicBox/"><img src="images/port2.gif" alt="Music Box Animation" class="portfolio-image img-responsive"></a>
+                                <figcaption class="caption">I designed a music box from scratch using SolidWorks, TuxGuitar, and Cura. All musical work was done by ear. Additional images and the project itself can be found on its <a href="http://github.com/dstarrtrey/MusicBox/">GitHub repository</a>.</figcaption>
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="/Wikipedia-Viewer"><img src="images/port3.jpg" alt="Wikipedia Viewer" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">A <a href="/Wikipedia-Viewer">Wikipedia viewer</a> I programmed by learning Wikipedia's API and accessing it with JQuery. It also help develop understanding of CSS/JavaScript transitions and animations.</figcaption>                                
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="/GIPHY-API-Webpage"><img src="images/giphy-api.png" alt="GIPHY & OMDb API App" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">A <a href="/GIPHY-API-Webpage">webapp</a> using GIPHY and OMDb's APIs to input a search query (presumably a movie) and display related gifs and movie/tv show information. For the code, see the <a href="http://www.github.com/dstarrtrey/GIPHY-API-Webpage">GitHub</a></figcaption>
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="/Calculator"><img src="images/Calculator.png" alt="JavaScript Calculator" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">This is a <a href="/Calculator">calculator</a> page I coded using JavaScript and CSS heavily to mimic many qualities of a simple physical calculator.</figcaption>
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="Quote-Generator"><img src="images/port6.jpg" alt="Quote Generator" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">A <a href="/Quote-Generator">random quote generator</a> I programmed using JavaScript and the words of some of my favorite philosophers and theologians.</figcaption>                                
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="http://codepen.io/dstarrtrey/pen/vjqqrw"><img src="images/pomodoro.png" alt="Pomodoro Clock" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">This is a <a href="http://codepen.io/dstarrtrey/pen/vjqqrw">Pomodoro Clock</a> programmed using JQuery. It allows you to set a timer to follow and take a set break after the length of every specified session length.</figcaption>                            
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="/Weather-API-Webpage"><img src="images/port5.jpg" alt="GPS Weather App" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">This is a <a href="/Weather-API-Webpage">GPS-based weather site</a> I programmed using JQuery and FreeCodeCamp's API (Which is updated frequently, despite my attempts to keep the page current).</figcaption>                            
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="http://www.vistamag.org"><img src="images/port10.jpg" alt="Vista Magazine Home Page Screenshot" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">I am the founding Web Content Strategist at <a href="http://www.vistamag.org">Vista Magazine</a> and a contributing writer. This position required a limited amount of HTML and CSS, however developed my understanding of social media outreach, engagement and content organization.</figcaption>                            
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="http://walkitoff.bandcamp.com/releases"><img src="images/port11.jpg" alt="Walk it Off Album Cover" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">I wrote the album "Inside Joke" by <a href="http://www.facebook.com/walkitoffil">Walk it Off</a> and recorded guitar, bass, and some vocals for it. It can be <a href="http://walkitoff.bandcamp.com/releases">downloaded</a> and streamed on all major platforms.</figcaption>                            
+                            </figure>
+                            <figure class="portfolio-item col-sm-6 col-md-4 col-lg-3">
+                                <a class="middle" href="http://github.com/dstarrtrey/Compositions"><img src="images/port12.jpg" alt="TuxGuitar Screenshot" class="img-responsive portfolio-image"></a>
+                                <figcaption class="caption">I have been writing music for over 6 years with various bands. I have developed several original compositions using TuxGuitar MIDI processor. The repository can be found on <a href="http://github.com/dstarrtrey/Compositions">GitHub</a>.</figcaption>                            
+                            </figure>
+                        </div>
+                    </div>
+                </div>  
+            </div>
         </div>
-        <div class="container-fluid footer">
-            <footer class="row text-center block">
-                <p class="col-xs-12">Copyright David Starr 2018 ©</p>
-            </footer>
-        </div>
-        <script src="" async defer></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

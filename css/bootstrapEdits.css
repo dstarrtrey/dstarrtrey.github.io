@@ -1,0 +1,39 @@
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+.row-centered {
+    text-align:center;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+.container{
+    padding: 0;
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    height:100%;
+}
+.col-md-8.col-centered{
+    height:100%;
+}
+@media (max-width: 580px) {
+    .container {
+        max-width: 580px;
+    }
+}
