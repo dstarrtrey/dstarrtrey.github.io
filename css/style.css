@@ -143,8 +143,8 @@ p{
   }
 .content{
     width: 100vw;
-    animation: dropIn 1.5s ease-in-out;
-    animation-fill-mode: forwards;
+    /* animation: dropIn 1.5s ease-in-out;
+    animation-fill-mode: forwards; */
 }
 .content-row{
     margin-top: 250px;
