@@ -13,10 +13,10 @@
 //   $('.content').load(file + ' .content');
 // };
 
-$(document).on('click', '.nav-link', function(event) {
-  // event.preventDefault();
-  $('.homepage').addClass('selected');
-  $('.homepage-img').addClass('homepage-img-animate');
-  $('.bar').addClass('selected');
-  // loadPage(event);
-});
+// $(document).on('click', '.nav-link', function(event) {
+//    event.preventDefault();
+//    $('.homepage').addClass('selected');
+//    $('.homepage-img').addClass('homepage-img-animate');
+//    $('.bar').addClass('selected');
+//    loadPage(event);
+// });
