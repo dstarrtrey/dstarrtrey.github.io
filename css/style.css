@@ -218,7 +218,7 @@ strong{
 }
 .homepage{
     width: 100%;
-    transition: height 1.5s, top 1.5s, max-width 1.5s, left 1.5s, border-radius 2s;
+    transition: height 1s, top 1.5s, max-width 1.5s, left 1.5s, border-radius 2s;
     -webkit-transition: height 1.5s, top 1.5s, max-width 1.5s, left 1.5s, border-radius 2s;
     -moz-transition: height 1.5s, top 1.5s, max-width 1.5s, left 1.5s, border-radius 2s;
     -ms-transition: height 1.5s, top 1.5s, max-width 1.5s, left 1.5s, border-radius 2s;

@@ -14,7 +14,7 @@
 // };
 
 $(document).on('click', '.nav-link', function(event) {
-  event.preventDefault();
+  // event.preventDefault();
   $('.homepage').addClass('selected');
   $('.homepage-img').addClass('homepage-img-animate');
   $('.bar').addClass('selected');
